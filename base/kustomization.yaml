@@ -3,6 +3,7 @@ kind: Kustomization
 resources:
 - namespace.yaml
 # - clusterrolebinding.yaml
+- github.com/argoproj/argo-rollouts/manifests/namespace-install
 - github.com/argoproj/argo-rollouts/manifests/crds
 - github.com/argoproj/argo-rollouts/manifests/base
 - github.com/argoproj/argo-rollouts/manifests/role
